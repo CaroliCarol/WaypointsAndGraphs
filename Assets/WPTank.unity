@@ -1518,7 +1518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Go to Factor
+  m_Text: 'Go to Factory
 
 '
 --- !u!222 &1552587038
@@ -1820,7 +1820,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1761980787}
         m_TargetAssemblyTypeName: FollowingWP, Assembly-CSharp
-        m_MethodName: GoToHeli
+        m_MethodName: GoToFactory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
