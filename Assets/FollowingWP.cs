@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowingWP : MonoBehaviour
@@ -20,7 +22,7 @@ public class FollowingWP : MonoBehaviour
         g = wpManager.GetComponent<WPManager>().graph;
         currentNode = wps[0];
 
-        Invoke("GoToRuin", 2);
+        //Invoke("GoToRuin", 2);
     }
 
     public void GoToHeli()
@@ -32,6 +34,12 @@ public class FollowingWP : MonoBehaviour
     public void GoToRuin()
     {
         g.AStar(currentNode, wps[1]);
+        currentWP = 0;
+    }
+
+    public void GoToFactory()
+    {
+        g.AStar(currentNode, wps[4]);
         currentWP = 0;
     }
 
