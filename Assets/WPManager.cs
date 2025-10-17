@@ -19,14 +19,18 @@ public class WPManager : MonoBehaviour
     {
         if (waypoints.Length > 0)
         {
-            graph.AddNode(wp);
-        }
-        foreach (Link l in links)
-        {
-            graph.AddEdge(l.node1, l.node2);
-            if (l.dir == Link.direction.BI)
+            foreach (GameObject wp in waypoints)
             {
-                graph.AddEdge(l.node2, l.node1);
+                graph.AddNode(wp);
+            }
+        
+            foreach (Link l in links)
+            {
+                graph.AddEdge(l.node1, l.node2);
+                if (l.dir == Link.direction.BI)
+                {
+                    graph.AddEdge(l.node2, l.node1);
+                }
             }
         }
     }

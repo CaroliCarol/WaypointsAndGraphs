@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Graph
 {
@@ -129,7 +130,7 @@ public class Graph
 
     int lowestF(List<Node> l)
     {
-        float lowestF = 0;
+        float lowestf = 0;
         int count = 0;
         int iteratorCount = 0;
 

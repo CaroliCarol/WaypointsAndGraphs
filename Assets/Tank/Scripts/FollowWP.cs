@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace One{
     
-public class FollowWP : MonoBehaviour {
-
+public class FollowWP : MonoBehaviour 
+{
     public GameObject[] waypoints;
     int currentWP = 0;
 
