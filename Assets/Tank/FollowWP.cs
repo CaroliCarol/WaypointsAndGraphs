@@ -18,7 +18,7 @@ public class FollowWP : MonoBehaviour
         DestroyImmediate(tracker.GetComponent<Collider>());
         tracker.GetComponent<MeshRenderer>().enabled = false;
         tracker.transform.position = this.transform.position;
-        tracker.transform.rotation = this.transform.position;
+        tracker.transform.rotation = this.transform.rotation;
     }
 
     void ProgressTracker()
